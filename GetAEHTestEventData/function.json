@@ -1,0 +1,15 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "type": "eventHubTrigger",
+      "name": "events",
+      "direction": "in",
+      "eventHubName": "test-aeh-101-event",
+      "connection": "receiverConnectionString",
+      "cardinality": "many",
+      "consumerGroup": "captureevent101",
+      "dataType": "binary"
+    }
+  ]
+}
